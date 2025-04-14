@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real-Time Data Visualization</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Real-Time Data Visualization</h1>
+
+    <div class="controls">
+      <input type="file" id="csvFile" accept=".csv" />
+      
+      <select id="chartType">
+        <option value="line">Line Chart</option>
+        <option value="bar">Bar Chart</option>
+        <option value="pie">Pie Chart</option>
+        <option value="radar">Radar Chart</option>
+        <option value="doughnut">Doughnut Chart</option>
+      </select>
+
+      <button onclick="handleCSVUpload()">Generate Chart</button>
+      <button onclick="downloadChart()">Download Chart</button>
+      <button id="toggleDark">🌙 Dark Mode</button>
+
+    </div>
+
+    <div class="chart-container">
+      <canvas id="myChart"></canvas>
+      
+<div id="data-table-container" class="table-container"></div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

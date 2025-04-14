@@ -1,0 +1,98 @@
+:root {
+    --bg-light: #ffffff;
+    --text-light: #000;
+    --card-light: #f9f9f9;
+  
+    --bg-dark: #121212;
+    --text-dark: #ffffff;
+    --card-dark: #1f1f1f;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  body.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: var(--card-light);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+  }
+  
+  body.dark-mode .container {
+    background-color: var(--card-dark);
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  input[type="file"],
+  select,
+  button {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .chart-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .table-container {
+    margin-top: 30px;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  body.dark-mode table {
+    border-color: #444;
+  }
+  
+  body.dark-mode th, body.dark-mode td {
+    background-color: #1f1f1f;
+    color: white;
+  }
+    
