@@ -21,11 +21,11 @@ A simple yet powerful client-side web application that allows users to upload CS
 ---
 
 ## 📁 Project Structure
-``
+```
 dataP/ ├── index.html
        ├── style.css
        ├── script.js 
-``
+```
 Open index.html in your browser.
 
 Upload a .csv file in the format:
